@@ -2,7 +2,8 @@
   "name": "rdm-cypress-common",
   "version": "1.0.1",
   "description": "",
-  "main": "src/index.js",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -14,11 +15,22 @@
   "author": "",
   "license": "ISC",
   "type": "commonjs",
+  "compilerOptions": {
+    "target": "ES6",
+    "module": "commonjs",
+    "outDir": "dist",
+    "rootDir": "src",
+    "declaration": true,
+    "declarationDir": "dist",
+    "strict": true,
+    "esModuleInterop": true
+  },
   "peerDependencies": {
     "cypress": "^15.0.0"
   },
   "devDependencies": {
     "cypress": "^15.0.0",
     "typescript": "^5.9.3"
-  }
+  },
+  "include": ["*.ts", "src/**/*.ts"]
 }
