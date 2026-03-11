@@ -3,7 +3,7 @@
  * @param suffix 
  * @returns CSS selector query string
  */
-export function byIDSuffix(suffix: string): string{
+export function idEndsWith(suffix: string): string{
     /*
       DEV NOTE: For legacy .Net Web Forms IDs are dynamically generated.
                 One consistency in the generated IDs are the suffixes.
@@ -17,7 +17,7 @@ export function byIDSuffix(suffix: string): string{
  * @param prefix 
  * @returns CSS selector query string
  */
-export function byIDPrefix(prefix: string): string{
+export function idStartsWith(prefix: string): string{
 
     return `[id^="${prefix}"]`;
 }
