@@ -4,7 +4,7 @@
  * @param selectors 
  * @returns Cypress.Chainable
  */
-function checkDropdownsForDataByID(selectors: string[]): Cypress.Chainable {
+export function checkDropdownsForDataByID(selectors: string[]): Cypress.Chainable {
     return cy.wrap(selectors).each((suffix) => {
         cy.get(`[id$="${suffix}"] option`)
             .find('option')
