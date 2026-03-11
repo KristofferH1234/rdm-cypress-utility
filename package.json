@@ -1,5 +1,5 @@
 {
-  "name": "rdm-cypress-utility",
+  "name": "rdm-cypress-common",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -18,8 +18,7 @@
     "cypress": "^13.0.0"
   },
   "devDependencies": {
-    "@types/cypress": "^0.1.6",
-    "cypress": "^13.17.0",
+    "cypress": "^15.0.0",
     "typescript": "^5.9.3"
   }
 }

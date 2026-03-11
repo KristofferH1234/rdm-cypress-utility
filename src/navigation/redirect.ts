@@ -5,7 +5,7 @@
   * @param path 
   * @returns Cypress.Chainable<string>
   */
- export function clickAndConfirmPageLoad_SkipRedirects(button: string, page: string, path: string): Cypress.Chainable<string> {
+ export function clickAndWaitForFinalPage(button: string, page: string, path: string): Cypress.Chainable<string> {
     /*
        Dev note: There is a quirk in legacy code where guard pages act as an intermediary.
                  So the usual '[click] then [get path of result page]' test fails.
