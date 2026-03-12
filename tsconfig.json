@@ -10,19 +10,10 @@
     "rootDir": "src",
     "skipLibCheck": true,
     "types": ["cypress", "node"],
-    "ignoreDeprecations": "6.0"
+    "ignoreDeprecations": "6.0",
+    "declaration": true
   },
   "include": ["src/**/*.ts"],
   "exclude": ["node_modules", "dist"]
 }
 
-// "compilerOptions": {
-//     "target": "ES6",
-//     "module": "commonjs",
-//     "outDir": "dist",
-//     "rootDir": "src",
-//     "declaration": true,
-//     "declarationDir": "dist",
-//     "strict": true,
-//     "esModuleInterop": true
-//   },
