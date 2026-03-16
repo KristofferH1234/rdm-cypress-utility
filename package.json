@@ -2,14 +2,15 @@
   "name": "rdm-cypress-common",
   "version": "1.0.1",
   "main": "dist/index.js",
-  "module": "dist/index.esm.js",
+  "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
+  "files": ["dist"],
   "scripts": {
     "build": "tsup src/index.ts --format cjs,esm --dts --clean"
   },
   "devDependencies": {
     "cypress": "^15.12.0",
-    "tsup": "^8.0.0",
+    "tsup": "^8.5.1",
     "typescript": "^5.9.3"
   }
 }
