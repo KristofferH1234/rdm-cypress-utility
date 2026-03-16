@@ -1,7 +1,7 @@
 // src/assertions/elements.ts
 function checkDropdownsForDataByID(selectors) {
   return cy.wrap(selectors).each((suffix) => {
-    cy.get(`[id$="${suffix}"] option`).find("option").should("have.length.greaterThan", 0);
+    cy.get(`[id$="${suffix}"]`).find("option").should("have.length.greaterThan", 0);
   });
 }
 
