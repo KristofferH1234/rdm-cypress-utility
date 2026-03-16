@@ -6,7 +6,7 @@
  */
 export function checkDropdownsForDataByID(selectors: string[]): Cypress.Chainable {
     return cy.wrap(selectors).each((suffix) => {
-        cy.get(`[id$="${suffix}"]`)
+        cy.get(`[id$="${suffix}"] option`)
             .find('option')
             .should('have.length.greaterThan', 0)
     })
